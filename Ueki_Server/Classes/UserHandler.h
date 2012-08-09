@@ -10,6 +10,7 @@
 
 #include <QTcpServer>
 #include <QThread>
+#include <QSqlDatabase>
 
 class UserHandler: public QThread {
     Q_OBJECT
@@ -17,7 +18,7 @@ public:
     UserHandler();
     virtual ~UserHandler();
 private:
-
+    QSqlDatabase *db;
 };
 
 #endif	/* USERHANDLER_H */

@@ -9,6 +9,7 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>Resources/Users_Battles.sql</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -36,7 +37,7 @@
         <compilerSet>default</compilerSet>
       </toolsSet>
       <qt>
-        <modules>core gui network</modules>
+        <modules>core gui network sql</modules>
         <mocDir>./Resources</mocDir>
         <rccDir>./Resources</rccDir>
         <uiDir>./Resources</uiDir>
