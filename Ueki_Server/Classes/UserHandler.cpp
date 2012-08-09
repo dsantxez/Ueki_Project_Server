@@ -10,9 +10,6 @@
 UserHandler::UserHandler() {
 }
 
-UserHandler::UserHandler(const UserHandler& orig) {
-}
-
 UserHandler::~UserHandler() {
 }
 

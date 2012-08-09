@@ -8,10 +8,13 @@
 #ifndef USERHANDLER_H
 #define	USERHANDLER_H
 
-class UserHandler {
+#include <QTcpServer>
+#include <QThread>
+
+class UserHandler: public QThread {
+    Q_OBJECT
 public:
     UserHandler();
-    UserHandler(const UserHandler& orig);
     virtual ~UserHandler();
 private:
 
