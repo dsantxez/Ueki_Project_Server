@@ -11,7 +11,6 @@
 class FightRingHandler {
 public:
     FightRingHandler();
-    FightRingHandler(const FightRingHandler& orig);
     virtual ~FightRingHandler();
 private:
 
