@@ -7,7 +7,8 @@
 
 #include <QtGui/QApplication>
 
-#include "Classes/UserHandler.h"
+#include "ServerMainForm.h"
+
 
 
 int main(int argc, char *argv[]) {
@@ -16,13 +17,9 @@ int main(int argc, char *argv[]) {
 
     QApplication app(argc, argv);
     
-    //Start the fight rings
-    
-    //Create&Start Handling Users
-    UserHandler *userHandler = new UserHandler();
-    userHandler->start();
-
-    // create and show your widgets here
+    //Start Running Server
+    ServerMainForm serverForm;
+    serverForm.show();
 
     return app.exec();
 }
