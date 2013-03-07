@@ -9,7 +9,6 @@
 #define	_SERVERMAINFORM_H
 
 #include "ui_ServerMainForm.h"
-#include "UekiServerConnectionHandler.h"
 #include <QMessageBox>
 
 class ServerMainForm : public QDialog {
@@ -19,7 +18,6 @@ public:
     virtual ~ServerMainForm();
 private:
     Ui::ServerMainForm widget;
-    UekiServerConnectionHandler conServer;
 };
 
 #endif	/* _SERVERMAINFORM_H */

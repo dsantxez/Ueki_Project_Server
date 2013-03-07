@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ServerMainForm.ui'
 **
-** Created
-**      by: Qt User Interface Compiler version 4.7.4
+** Created: Thu Mar 7 13:43:15 2013
+**      by: Qt User Interface Compiler version 4.8.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -26,6 +26,7 @@ class Ui_ServerMainForm
 public:
     QPushButton *quitButton;
     QLabel *label;
+    QPushButton *restartButton;
 
     void setupUi(QDialog *ServerMainForm)
     {
@@ -37,9 +38,14 @@ public:
         quitButton->setGeometry(QRect(300, 270, 94, 24));
         label = new QLabel(ServerMainForm);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 20, 55, 15));
+        label->setGeometry(QRect(10, 20, 381, 101));
+        label->setLineWidth(0);
+        restartButton = new QPushButton(ServerMainForm);
+        restartButton->setObjectName(QString::fromUtf8("restartButton"));
+        restartButton->setGeometry(QRect(180, 270, 91, 24));
 
         retranslateUi(ServerMainForm);
+        QObject::connect(quitButton, SIGNAL(clicked()), ServerMainForm, SLOT(close()));
 
         QMetaObject::connectSlotsByName(ServerMainForm);
     } // setupUi
@@ -49,6 +55,7 @@ public:
         ServerMainForm->setWindowTitle(QApplication::translate("ServerMainForm", "Ueki BattleGround Server", 0, QApplication::UnicodeUTF8));
         quitButton->setText(QApplication::translate("ServerMainForm", "Quit", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("ServerMainForm", "TextLabel", 0, QApplication::UnicodeUTF8));
+        restartButton->setText(QApplication::translate("ServerMainForm", "Restart", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

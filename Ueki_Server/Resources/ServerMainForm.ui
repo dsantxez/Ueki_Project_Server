@@ -31,15 +31,48 @@
     <rect>
      <x>10</x>
      <y>20</y>
-     <width>55</width>
-     <height>15</height>
+     <width>381</width>
+     <height>101</height>
     </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
    </property>
    <property name="text">
     <string>TextLabel</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="restartButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>270</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>quitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ServerMainForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
