@@ -4,22 +4,21 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Classes/ServerConnectionHandler.h</itemPath>
-      <itemPath>Resources/ServerMainForm.h</itemPath>
-      <itemPath>Classes/ServerSession.h</itemPath>
+      <itemPath>Classes/FortuneServer.h</itemPath>
+      <itemPath>Classes/FortuneThread.h</itemPath>
+      <itemPath>Classes/ServerMainForm.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>Resources/ServerMainForm.ui</itemPath>
-      <itemPath>Resources/Users_Battles.sql</itemPath>
+      <itemPath>Classes/ServerMainForm.ui</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Classes/ServerConnectionHandler.cpp</itemPath>
-      <itemPath>Resources/ServerMainForm.cpp</itemPath>
-      <itemPath>Classes/ServerSession.cpp</itemPath>
+      <itemPath>Classes/FortuneServer.cpp</itemPath>
+      <itemPath>Classes/FortuneThread.cpp</itemPath>
+      <itemPath>Classes/ServerMainForm.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -54,24 +53,19 @@
           </incDir>
         </ccTool>
       </compileType>
-      <item path="Classes/ServerConnectionHandler.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
+      <item path="Classes/FortuneServer.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Classes/ServerConnectionHandler.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/FortuneServer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Classes/ServerSession.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Classes/FortuneThread.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Classes/ServerSession.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/FortuneThread.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Resources/ServerMainForm.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Classes/ServerMainForm.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Resources/ServerMainForm.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/ServerMainForm.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Resources/ServerMainForm.ui" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Resources/Users_Battles.sql" ex="false" tool="3" flavor2="0">
+      <item path="Classes/ServerMainForm.ui" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -99,24 +93,19 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Classes/ServerConnectionHandler.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
+      <item path="Classes/FortuneServer.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Classes/ServerConnectionHandler.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/FortuneServer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Classes/ServerSession.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Classes/FortuneThread.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Classes/ServerSession.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/FortuneThread.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Resources/ServerMainForm.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Classes/ServerMainForm.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Resources/ServerMainForm.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/ServerMainForm.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Resources/ServerMainForm.ui" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Resources/Users_Battles.sql" ex="false" tool="3" flavor2="0">
+      <item path="Classes/ServerMainForm.ui" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

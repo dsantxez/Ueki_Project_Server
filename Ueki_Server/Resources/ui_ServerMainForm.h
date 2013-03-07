@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ServerMainForm.ui'
 **
-** Created: Thu Mar 7 17:15:24 2013
+** Created: Thu Mar 7 17:36:42 2013
 **      by: Qt User Interface Compiler version 4.8.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -24,25 +24,25 @@ QT_BEGIN_NAMESPACE
 class Ui_ServerMainForm
 {
 public:
-    QPushButton *quitButton;
     QLabel *label;
-    QPushButton *restartButton;
+    QPushButton *startButton;
+    QPushButton *quitButton;
 
     void setupUi(QDialog *ServerMainForm)
     {
         if (ServerMainForm->objectName().isEmpty())
             ServerMainForm->setObjectName(QString::fromUtf8("ServerMainForm"));
         ServerMainForm->resize(400, 300);
-        quitButton = new QPushButton(ServerMainForm);
-        quitButton->setObjectName(QString::fromUtf8("quitButton"));
-        quitButton->setGeometry(QRect(300, 270, 94, 24));
         label = new QLabel(ServerMainForm);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 20, 381, 101));
+        label->setGeometry(QRect(10, 20, 381, 141));
         label->setLineWidth(0);
-        restartButton = new QPushButton(ServerMainForm);
-        restartButton->setObjectName(QString::fromUtf8("restartButton"));
-        restartButton->setGeometry(QRect(180, 270, 91, 24));
+        startButton = new QPushButton(ServerMainForm);
+        startButton->setObjectName(QString::fromUtf8("startButton"));
+        startButton->setGeometry(QRect(160, 270, 91, 24));
+        quitButton = new QPushButton(ServerMainForm);
+        quitButton->setObjectName(QString::fromUtf8("quitButton"));
+        quitButton->setGeometry(QRect(290, 270, 91, 24));
 
         retranslateUi(ServerMainForm);
         QObject::connect(quitButton, SIGNAL(clicked()), ServerMainForm, SLOT(close()));
@@ -52,10 +52,10 @@ public:
 
     void retranslateUi(QDialog *ServerMainForm)
     {
-        ServerMainForm->setWindowTitle(QApplication::translate("ServerMainForm", "Ueki BattleGround Server", 0, QApplication::UnicodeUTF8));
-        quitButton->setText(QApplication::translate("ServerMainForm", "Quit", 0, QApplication::UnicodeUTF8));
+        ServerMainForm->setWindowTitle(QApplication::translate("ServerMainForm", "ServerMainForm", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("ServerMainForm", "TextLabel", 0, QApplication::UnicodeUTF8));
-        restartButton->setText(QApplication::translate("ServerMainForm", "Restart", 0, QApplication::UnicodeUTF8));
+        startButton->setText(QApplication::translate("ServerMainForm", "Start", 0, QApplication::UnicodeUTF8));
+        quitButton->setText(QApplication::translate("ServerMainForm", "Quit", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

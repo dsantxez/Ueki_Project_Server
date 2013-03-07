@@ -1,13 +1,13 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'ServerMainForm.h'
 **
-** Created: Thu Mar 7 17:15:29 2013
+** Created: Thu Mar 7 17:37:32 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "ServerMainForm.h"
+#include "../Classes/ServerMainForm.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'ServerMainForm.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 63
@@ -31,13 +31,13 @@ static const uint qt_meta_data_ServerMainForm[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      23,   16,   15,   15, 0x0a,
+      16,   15,   15,   15, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_ServerMainForm[] = {
-    "ServerMainForm\0\0status\0serverDidStart(QString)\0"
+    "ServerMainForm\0\0startServices()\0"
 };
 
 void ServerMainForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -46,10 +46,11 @@ void ServerMainForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         Q_ASSERT(staticMetaObject.cast(_o));
         ServerMainForm *_t = static_cast<ServerMainForm *>(_o);
         switch (_id) {
-        case 0: _t->serverDidStart((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 0: _t->startServices(); break;
         default: ;
         }
     }
+    Q_UNUSED(_a);
 }
 
 const QMetaObjectExtraData ServerMainForm::staticMetaObjectExtraData = {
