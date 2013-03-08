@@ -5,15 +5,15 @@
  * Created on March 7, 2013, 5:23 PM
  */
 
-#include "UekiServerThread.h"
+#include "UekiAccessServerThread.h"
 #include <QtNetwork>
 
-UekiServerThread::UekiServerThread(int socketDescriptor, const QString &fortune, QObject *parent)
-     : QThread(parent), socketDescriptor(socketDescriptor), text(fortune)
+UekiAccessServerThread::UekiAccessServerThread(int socketDescriptor, QObject *parent)
+     : QThread(parent), socketDescriptor(socketDescriptor)
  {
  }
 
- void UekiServerThread::run()
+ void UekiAccessServerThread::run()
  {
      QTcpSocket tcpSocket;
      if (!tcpSocket.setSocketDescriptor(socketDescriptor)) {
@@ -25,7 +25,6 @@ UekiServerThread::UekiServerThread(int socketDescriptor, const QString &fortune,
      QDataStream out(&block, QIODevice::WriteOnly);
      out.setVersion(QDataStream::Qt_4_0);
      out << (quint16)0;
-     out << text;
      out.device()->seek(0);
      out << (quint16)(block.size() - sizeof(quint16));
 
@@ -33,6 +32,6 @@ UekiServerThread::UekiServerThread(int socketDescriptor, const QString &fortune,
      tcpSocket.disconnectFromHost();
      tcpSocket.waitForDisconnected();
  }
-UekiServerThread::~UekiServerThread() {
+UekiAccessServerThread::~UekiAccessServerThread() {
 }
 

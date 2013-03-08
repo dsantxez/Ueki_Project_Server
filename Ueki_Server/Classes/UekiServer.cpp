@@ -6,15 +6,14 @@
  */
 
 #include "UekiServer.h"
-#include "UekiServerThread.h"
+#include "UekiAccessServerThread.h"
 
 UekiServer::UekiServer(QObject* parent) : QTcpServer(parent) {
 }
 
 void UekiServer::incomingConnection(int socketDescriptor)
  {
-     QString fortune = fortunes.at(qrand() % fortunes.size());
-     UekiServerThread *thread = new UekiServerThread(socketDescriptor, fortune, this);
+     UekiAccessServerThread *thread = new UekiAccessServerThread(socketDescriptor,this);
      connect(thread, SIGNAL(finished()), thread, SLOT(deleteLater()));
      thread->start();
  }

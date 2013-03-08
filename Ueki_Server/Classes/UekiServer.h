@@ -20,7 +20,6 @@ public:
      void incomingConnection(int socketDescriptor);
 
  private:
-     QStringList fortunes;
  };
 
 #endif	/* FORTUNESERVER_H */

@@ -10,21 +10,22 @@
 
 #include <QThread>
 #include <QTcpSocket>
+#include <QHash>
 
-class UekiServerThread : public QThread{
+class UekiAccessServerThread : public QThread{
     Q_OBJECT
 public:
-    UekiServerThread(int socketDescriptor, const QString &fortune, QObject *parent);
+    UekiAccessServerThread(int socketDescriptor, QObject *parent);
 
      void run();
-     ~UekiServerThread();
+     ~UekiAccessServerThread();
 
  signals:
      void error(QTcpSocket::SocketError socketError);
 
  private:
      int socketDescriptor;
-     QString text;
+     QHash<QString,QString> users;
  };
 
 #endif	/* FORTUNETHREAD_H */

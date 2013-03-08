@@ -4,9 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Classes/FortuneServer.h</itemPath>
-      <itemPath>Classes/FortuneThread.h</itemPath>
       <itemPath>Classes/ServerMainForm.h</itemPath>
+      <itemPath>Classes/UekiAccessServerThread.h</itemPath>
+      <itemPath>Classes/UekiServer.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -16,9 +16,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Classes/FortuneServer.cpp</itemPath>
-      <itemPath>Classes/FortuneThread.cpp</itemPath>
       <itemPath>Classes/ServerMainForm.cpp</itemPath>
+      <itemPath>Classes/UekiAccessServerThread.cpp</itemPath>
+      <itemPath>Classes/UekiServer.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -53,19 +53,19 @@
           </incDir>
         </ccTool>
       </compileType>
-      <item path="Classes/FortuneServer.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Classes/FortuneServer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Classes/FortuneThread.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Classes/FortuneThread.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Classes/ServerMainForm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Classes/ServerMainForm.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes/ServerMainForm.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/UekiAccessServerThread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/UekiAccessServerThread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/UekiServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/UekiServer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -93,19 +93,19 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Classes/FortuneServer.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Classes/FortuneServer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Classes/FortuneThread.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Classes/FortuneThread.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Classes/ServerMainForm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Classes/ServerMainForm.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes/ServerMainForm.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/UekiAccessServerThread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/UekiAccessServerThread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/UekiServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/UekiServer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
